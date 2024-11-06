@@ -94,6 +94,127 @@ try {
     <meta charset="UTF-8">
     <title>Application de gestion de playlists</title>
 </head>
+<style>
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+main {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Titres */
+h2, h1,h3 {
+    color: #1DB954;
+}
+
+/* Style des formulaires */
+form {
+    background-color: #1C1C1C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3b3;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+/* Boutons */
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #1DB954;
+    margin-top : 10px;
+    border: 1px solid #1DB954;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #1DB954;
+    color: #FFFFFF;
+}
+
+/* Liens */
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Groupes de boutons radio */
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+input[type="checkbox"] {
+    accent-color: #1DB954; 
+    transform: scale(1.2);
+    margin-right: 10px;
+    
+}
+
+
+.radio-group label {
+    font-weight: normal;
+}
+
+/* Style des listes */
+li {
+    background-color: #333333;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+/* Style pour l'audio */
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+</style>
 <body>
     <main>
         <?php if (!isset($_SESSION['user']) && $action === 'signin'): ?>
@@ -125,5 +246,6 @@ try {
             <p><a href="?action=signin">Déjà inscrit ? Connectez-vous ici.</a></p>
         <?php endif; ?>
     </main>
+
 </body>
 </html>

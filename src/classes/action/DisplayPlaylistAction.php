@@ -56,7 +56,8 @@ class DisplayPlaylistAction extends Action {
         }
 
         // Afficher la liste de toutes les playlists avec un lien pour les mettre en active ou les supprimer
-        $html .= "<h3>Toutes les Playlists</h3>";
+        $html .= "<h2>Toutes les Playlists</h2><br><h3>Cliquez sur le nom de la playlist de votre choix pour la choisir en tant que playlist principale</h3>";
+        
         foreach ($playlistsData as $playlistData) {
             $playlistName = htmlspecialchars($playlistData->getNom());
             $playlistId = $playlistData->getId();

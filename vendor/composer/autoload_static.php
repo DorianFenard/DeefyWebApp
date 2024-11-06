@@ -22,26 +22,6 @@ class ComposerStaticInita8568dabdb1761605cf3080dd449d1be
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'iutnc\\deefy\\action\\Action' => __DIR__ . '/../..' . '/src/classes/action/Action.php',
-        'iutnc\\deefy\\action\\AddPlaylistAction' => __DIR__ . '/../..' . '/src/classes/action/AddPlaylistAction.php',
-        'iutnc\\deefy\\action\\AddPodcastTrackAction' => __DIR__ . '/../..' . '/src/classes/action/AddPodcastTrackAction.php',
-        'iutnc\\deefy\\action\\DefaultAction' => __DIR__ . '/../..' . '/src/classes/action/DefaultAction.php',
-        'iutnc\\deefy\\action\\DisplayPlaylistAction' => __DIR__ . '/../..' . '/src/classes/action/DisplayPlaylistAction.php',
-        'iutnc\\deefy\\audio\\lists\\Album' => __DIR__ . '/../..' . '/src/classes/audio/lists/Album.php',
-        'iutnc\\deefy\\audio\\lists\\AudioList' => __DIR__ . '/../..' . '/src/classes/audio/lists/AudioList.php',
-        'iutnc\\deefy\\audio\\lists\\Playlist' => __DIR__ . '/../..' . '/src/classes/audio/lists/Playlist.php',
-        'iutnc\\deefy\\audio\\tracks\\AlbumTrack' => __DIR__ . '/../..' . '/src/classes/audio/tracks/AlbumTrack.php',
-        'iutnc\\deefy\\audio\\tracks\\AudioTrack' => __DIR__ . '/../..' . '/src/classes/audio/tracks/AudioTrack.php',
-        'iutnc\\deefy\\audio\\tracks\\PodcastTrack' => __DIR__ . '/../..' . '/src/classes/audio/tracks/PodcastTrack.php',
-        'iutnc\\deefy\\auth\\AuthnException' => __DIR__ . '/../..' . '/src/classes/auth/AuthnException.php',
-        'iutnc\\deefy\\auth\\AuthnProvider' => __DIR__ . '/../..' . '/src/classes/auth/AuthnProvider.php',
-        'iutnc\\deefy\\dispatch\\Dispatcher' => __DIR__ . '/../..' . '/src/classes/dispatch/Dispatcher.php',
-        'iutnc\\deefy\\exception\\InvalidPropertyNameException' => __DIR__ . '/../..' . '/src/classes/exception/InvalidPropertyNameException.php',
-        'iutnc\\deefy\\exception\\InvalidPropertyValueException' => __DIR__ . '/../..' . '/src/classes/exception/InvalidPropertyValueException.php',
-        'iutnc\\deefy\\render\\AudioListRenderer' => __DIR__ . '/../..' . '/src/classes/render/AudioListRenderer.php',
-        'iutnc\\deefy\\render\\AudioTrackRenderer' => __DIR__ . '/../..' . '/src/classes/render/AudioTrackRenderer.php',
-        'iutnc\\deefy\\render\\Renderer' => __DIR__ . '/../..' . '/src/classes/render/Renderer.php',
-        'iutnc\\deefy\\repository\\DeefyRepository' => __DIR__ . '/../..' . '/src/classes/repository/DeefyRepository.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
